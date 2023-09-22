@@ -6,8 +6,9 @@ const CampoPesquisar = styled.input`
         padding: 12px 16px;
         width: 602px;
         height: 50px;
+        
         background-color: transparent;
-
+        
         color: #D9D9D9;
         font-family: Gandhi Sans;
         font-size: 20px;
