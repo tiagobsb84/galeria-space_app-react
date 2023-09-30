@@ -20,7 +20,7 @@ const SecaoFuida = styled.section`
     flex-grow: 1;
 `;
 
-const Galeria = ({ fotos = [] }) => {
+const Galeria = ({ fotos = [], aoSelecionaFoto }) => {
     return(
         <>
             <Tags />
@@ -29,6 +29,7 @@ const Galeria = ({ fotos = [] }) => {
                     <Titulo>Navegue pela galeria</Titulo>
                     <ImagemContainer>
                         {fotos.map(foto => <Imagem 
+                            aoZoomSelecionado={aoSelecionaFoto}
                             key={foto.id}
                             foto={foto}
                         />)}
